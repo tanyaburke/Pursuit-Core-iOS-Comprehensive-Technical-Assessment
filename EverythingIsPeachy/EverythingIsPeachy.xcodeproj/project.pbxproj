@@ -14,6 +14,7 @@
 		2E67B52B242019BB00F48CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B52A242019BB00F48CD9 /* Assets.xcassets */; };
 		2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B52C242019BB00F48CD9 /* LaunchScreen.storyboard */; };
 		2E67B539242019BC00F48CD9 /* EverythingIsPeachyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */; };
+		2E67B54424201A4000F48CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2E67B534242019BC00F48CD9 /* EverythingIsPeachyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverythingIsPeachyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverythingIsPeachyTests.swift; sourceTree = "<group>"; };
 		2E67B53A242019BC00F48CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				2E67B52A242019BB00F48CD9 /* Assets.xcassets */,
 				2E67B52C242019BB00F48CD9 /* LaunchScreen.storyboard */,
 				2E67B52F242019BB00F48CD9 /* Info.plist */,
+				2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */,
 			);
 			path = EverythingIsPeachy;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */,
+				2E67B54424201A4000F48CD9 /* GoogleService-Info.plist in Resources */,
 				2E67B52B242019BB00F48CD9 /* Assets.xcassets in Resources */,
 				2E67B529242019B800F48CD9 /* Main.storyboard in Resources */,
 			);
