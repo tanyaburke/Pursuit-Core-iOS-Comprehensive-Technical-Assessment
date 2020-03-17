@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B52C242019BB00F48CD9 /* LaunchScreen.storyboard */; };
 		2E67B539242019BC00F48CD9 /* EverythingIsPeachyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */; };
 		2E67B54424201A4000F48CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */; };
+		2EDE29DC2420666F00B5C85D /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DB2420666F00B5C85D /* FirebaseAuthService.swift */; };
+		2EDE29DE242066C600B5C85D /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DD242066C600B5C85D /* FirestoreService.swift */; };
 		D42266902A3074C9E916762B /* Pods_EverythingIsPeachy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417460B21D75D9C9232DBF80 /* Pods_EverythingIsPeachy.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverythingIsPeachyTests.swift; sourceTree = "<group>"; };
 		2E67B53A242019BC00F48CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EDE29DB2420666F00B5C85D /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		2EDE29DD242066C600B5C85D /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		3AD5547FF84104924C5DF22D /* Pods-EverythingIsPeachy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachy.debug.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachy/Pods-EverythingIsPeachy.debug.xcconfig"; sourceTree = "<group>"; };
 		417460B21D75D9C9232DBF80 /* Pods_EverythingIsPeachy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverythingIsPeachy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4F64F99A0662ABA705AAC5 /* Pods_EverythingIsPeachyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverythingIsPeachyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +106,7 @@
 		2E67B520242019B800F48CD9 /* EverythingIsPeachy */ = {
 			isa = PBXGroup;
 			children = (
+				2EDE29DA2420662700B5C85D /* Services */,
 				2E67B521242019B800F48CD9 /* AppDelegate.swift */,
 				2E67B523242019B800F48CD9 /* SceneDelegate.swift */,
 				2E67B525242019B800F48CD9 /* ViewController.swift */,
@@ -123,6 +128,15 @@
 			path = EverythingIsPeachyTests;
 			sourceTree = "<group>";
 		};
+		2EDE29DA2420662700B5C85D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE29DB2420666F00B5C85D /* FirebaseAuthService.swift */,
+				2EDE29DD242066C600B5C85D /* FirestoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		395731175DC4E6CC6F54DAA8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +145,6 @@
 				0BF9F2FF3CF0E9CBB8F5786E /* Pods-EverythingIsPeachyTests.debug.xcconfig */,
 				1483A4BAD09989BCE74A3C34 /* Pods-EverythingIsPeachyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDE29DC2420666F00B5C85D /* FirebaseAuthService.swift in Sources */,
+				2EDE29DE242066C600B5C85D /* FirestoreService.swift in Sources */,
 				2E67B526242019B800F48CD9 /* ViewController.swift in Sources */,
 				2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */,
 				2E67B524242019B800F48CD9 /* SceneDelegate.swift in Sources */,
