@@ -14,8 +14,11 @@
 		2E67B52B242019BB00F48CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B52A242019BB00F48CD9 /* Assets.xcassets */; };
 		2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B52C242019BB00F48CD9 /* LaunchScreen.storyboard */; };
 		2E67B539242019BC00F48CD9 /* EverythingIsPeachyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */; };
-		2E67B54424201A4000F48CD9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */; };
 		2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */; };
+		2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29E224206BD400B5C85D /* LoginViewController.swift */; };
+		2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E424206CEC00B5C85D /* LoginView.storyboard */; };
+		2EDE29E824206F5C00B5C85D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E724206F5B00B5C85D /* GoogleService-Info.plist */; };
+		2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */; };
 		D42266902A3074C9E916762B /* Pods_EverythingIsPeachy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417460B21D75D9C9232DBF80 /* Pods_EverythingIsPeachy.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +46,11 @@
 		2E67B534242019BC00F48CD9 /* EverythingIsPeachyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EverythingIsPeachyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverythingIsPeachyTests.swift; sourceTree = "<group>"; };
 		2E67B53A242019BC00F48CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		2EDE29E224206BD400B5C85D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2EDE29E424206CEC00B5C85D /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+		2EDE29E724206F5B00B5C85D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		3AD5547FF84104924C5DF22D /* Pods-EverythingIsPeachy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachy.debug.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachy/Pods-EverythingIsPeachy.debug.xcconfig"; sourceTree = "<group>"; };
 		417460B21D75D9C9232DBF80 /* Pods_EverythingIsPeachy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverythingIsPeachy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4F64F99A0662ABA705AAC5 /* Pods_EverythingIsPeachyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EverythingIsPeachyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,13 +110,15 @@
 			children = (
 				2EDE29DF2420675C00B5C85D /* New Group */,
 				2EDE29DA2420662700B5C85D /* FirebaseServices */,
-				2E67B521242019B800F48CD9 /* AppDelegate.swift */,
-				2E67B523242019B800F48CD9 /* SceneDelegate.swift */,
+				2EDE29E624206CF700B5C85D /* Storyboards */,
+				2EDE29E9242082BC00B5C85D /* Extensions */,
+				2EDE29E124206B7E00B5C85D /* ViewControllers */,
+				2EDE29E024206B3700B5C85D /* SupportingFiles */,
 				2E67B525242019B800F48CD9 /* ViewController.swift */,
 				2E67B52A242019BB00F48CD9 /* Assets.xcassets */,
 				2E67B52C242019BB00F48CD9 /* LaunchScreen.storyboard */,
 				2E67B52F242019BB00F48CD9 /* Info.plist */,
-				2E67B54324201A4000F48CD9 /* GoogleService-Info.plist */,
+				2EDE29E724206F5B00B5C85D /* GoogleService-Info.plist */,
 			);
 			path = EverythingIsPeachy;
 			sourceTree = "<group>";
@@ -137,6 +145,42 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2EDE29E024206B3700B5C85D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2E67B523242019B800F48CD9 /* SceneDelegate.swift */,
+				2E67B521242019B800F48CD9 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		2EDE29E124206B7E00B5C85D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE29E224206BD400B5C85D /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
+			path = SupportingFiles/ViewControllers;
+			sourceTree = "<group>";
+		};
+		2EDE29E624206CF700B5C85D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE29E424206CEC00B5C85D /* LoginView.storyboard */,
+			);
+			name = Storyboards;
+			path = SupportingFiles/ViewControllers/Storyboards;
+			sourceTree = "<group>";
+		};
+		2EDE29E9242082BC00B5C85D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */,
+			);
+			name = Extensions;
+			path = SupportingFiles/ViewControllers/Extensions;
 			sourceTree = "<group>";
 		};
 		395731175DC4E6CC6F54DAA8 /* Pods */ = {
@@ -234,8 +278,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */,
+				2EDE29E824206F5C00B5C85D /* GoogleService-Info.plist in Resources */,
 				2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */,
-				2E67B54424201A4000F48CD9 /* GoogleService-Info.plist in Resources */,
 				2E67B52B242019BB00F48CD9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */,
 				2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */,
 				2E67B526242019B800F48CD9 /* ViewController.swift in Sources */,
 				2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */,
+				2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */,
 				2E67B524242019B800F48CD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
