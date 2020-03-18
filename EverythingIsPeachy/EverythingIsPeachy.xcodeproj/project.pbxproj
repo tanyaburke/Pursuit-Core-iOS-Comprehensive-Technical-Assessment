@@ -16,6 +16,10 @@
 		2E67B539242019BC00F48CD9 /* EverythingIsPeachyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B538242019BC00F48CD9 /* EverythingIsPeachyTests.swift */; };
 		2E8EF24B2421A42C007C20F8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF24A2421A42C007C20F8 /* SettingsViewController.swift */; };
 		2E8EF24D2421A564007C20F8 /* peachy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E8EF24C2421A564007C20F8 /* peachy.gif */; };
+		2E8EF24F2421BC2D007C20F8 /* GIF+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF24E2421BC2D007C20F8 /* GIF+Extension.swift */; };
+		2E8EF2512421BC4D007C20F8 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2502421BC4D007C20F8 /* InitialViewController.swift */; };
+		2E8EF2542421BD3A007C20F8 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2532421BD3A007C20F8 /* InitialView.swift */; };
+		2E8EF2562421C077007C20F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2552421C077007C20F8 /* DetailView.swift */; };
 		2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */; };
 		2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29E224206BD400B5C85D /* LoginViewController.swift */; };
 		2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E424206CEC00B5C85D /* LoginView.storyboard */; };
@@ -55,6 +59,10 @@
 		2E67B53A242019BC00F48CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8EF24A2421A42C007C20F8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2E8EF24C2421A564007C20F8 /* peachy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = peachy.gif; sourceTree = "<group>"; };
+		2E8EF24E2421BC2D007C20F8 /* GIF+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GIF+Extension.swift"; sourceTree = "<group>"; };
+		2E8EF2502421BC4D007C20F8 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		2E8EF2532421BD3A007C20F8 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		2E8EF2552421C077007C20F8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
 		2EDE29E224206BD400B5C85D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EDE29E424206CEC00B5C85D /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
@@ -126,6 +134,7 @@
 				2EDE29DA2420662700B5C85D /* FirebaseServices */,
 				2EDE29E624206CF700B5C85D /* Storyboards */,
 				2EDE29E9242082BC00B5C85D /* Extensions */,
+				2E8EF2522421BC58007C20F8 /* Views */,
 				2EDE29E124206B7E00B5C85D /* ViewControllers */,
 				2EDE29E024206B3700B5C85D /* SupportingFiles */,
 				2E67B525242019B800F48CD9 /* ViewController.swift */,
@@ -144,6 +153,16 @@
 				2E67B53A242019BC00F48CD9 /* Info.plist */,
 			);
 			path = EverythingIsPeachyTests;
+			sourceTree = "<group>";
+		};
+		2E8EF2522421BC58007C20F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E8EF2532421BD3A007C20F8 /* InitialView.swift */,
+				2E8EF2552421C077007C20F8 /* DetailView.swift */,
+			);
+			name = Views;
+			path = SupportingFiles/ViewControllers/Extensions/Views;
 			sourceTree = "<group>";
 		};
 		2EDE29DA2420662700B5C85D /* FirebaseServices */ = {
@@ -174,6 +193,7 @@
 		2EDE29E124206B7E00B5C85D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E8EF2502421BC4D007C20F8 /* InitialViewController.swift */,
 				2EDE29E224206BD400B5C85D /* LoginViewController.swift */,
 				2EDE29EC24215A1E00B5C85D /* TabBarController.swift */,
 				2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */,
@@ -199,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */,
+				2E8EF24E2421BC2D007C20F8 /* GIF+Extension.swift */,
 			);
 			name = Extensions;
 			path = SupportingFiles/ViewControllers/Extensions;
@@ -387,15 +408,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDE29F324215AB900B5C85D /* CollectionViewController.swift in Sources */,
+				2E8EF2512421BC4D007C20F8 /* InitialViewController.swift in Sources */,
 				2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */,
 				2E8EF24B2421A42C007C20F8 /* SettingsViewController.swift in Sources */,
 				2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */,
+				2E8EF2542421BD3A007C20F8 /* InitialView.swift in Sources */,
 				2EDE29EF24215A4200B5C85D /* FavoritesViewController.swift in Sources */,
 				2E67B526242019B800F48CD9 /* ViewController.swift in Sources */,
 				2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */,
 				2EDE29ED24215A1E00B5C85D /* TabBarController.swift in Sources */,
+				2E8EF24F2421BC2D007C20F8 /* GIF+Extension.swift in Sources */,
 				2EDE29F524215BA200B5C85D /* DetailViewController.swift in Sources */,
 				2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */,
+				2E8EF2562421C077007C20F8 /* DetailView.swift in Sources */,
 				2E67B524242019B800F48CD9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

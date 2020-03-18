@@ -16,6 +16,7 @@
 import UIKit
 
 
+
 enum AccountState {
   case existingUser
   case newUser
@@ -93,13 +94,13 @@ class LoginViewController: UIViewController {
     private func clearErrorLabel() {
       errorLabel.text = ""
     }
+    @IBAction func experienceControl(_ sender: UISegmentedControl) {
+    }
     
     @IBAction func toggleAccountState(_ sender: UIButton) {
         
-        // change the account login state
           accountState = accountState == .existingUser ? .newUser : .existingUser
-          
-          // animation duration
+        
           let duration: TimeInterval = 1.0
           
           if accountState == .existingUser {
