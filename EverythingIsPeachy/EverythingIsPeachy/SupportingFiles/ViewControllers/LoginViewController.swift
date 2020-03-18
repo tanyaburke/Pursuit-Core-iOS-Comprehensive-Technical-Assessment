@@ -6,6 +6,13 @@
 //  Copyright © 2020 Tanya Burke. All rights reserved.
 //
 
+//## Create Account Screen
+//
+//- Select which API you want to get information from.
+//- Create a new account using email and password.
+//                                                                                      
+
+
 import UIKit
 
 

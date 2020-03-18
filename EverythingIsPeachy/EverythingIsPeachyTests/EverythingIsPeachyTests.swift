@@ -10,25 +10,43 @@ import XCTest
 @testable import EverythingIsPeachy
 
 class EverythingIsPeachyTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
+//       // unit test for our TopStory model
+//       func testModel() {
+//         // arrange
+//         let jsonData = """
+//            [
+//             {
+//               "id": "1",
+//               "quizTitle": "What is the difference between Synchronous & Asynchronous task",
+//               "facts": [
+//                 "Synchronous: waits until the task have completed",
+//                 "Asynchronous: completes a task in the background and can notify you when complete"
+//               ]
+//             },
+//             {
+//               "id": "2",
+//               "quizTitle": "What is Enum or Enumerations",
+//               "facts": [
+//                 "contains a group of related values",
+//                 "enumerations define a finite number of states, and can bundle associated values with each individual state, you can use them to model the state of your app and its internal processes"
+//               ]
+//             }
+//            ]
+//         """.data(using: .utf8)!
+//         
+//         let expectedTitle = "What is the difference between Synchronous & Asynchronous task"
+//         
+//         // act
+//         do {
+//           let cards = try JSONDecoder().decode([Card].self, from: jsonData)
+//           // assert
+//             let supTitle = cards.first?.quizTitle ?? ""
+//           XCTAssertEqual(expectedTitle, supTitle)
+//         } catch {
+//           XCTFail("decoding error: \(error)")
+//         }
+//       }
+//
+//     }
 }

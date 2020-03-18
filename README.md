@@ -69,7 +69,7 @@ You **must** unit test your models.
 ​
 [Firebase Auth Documentation on "user lifecycle"](https://firebase.google.com/docs/auth/users#the_user_lifecycle)
 ​
-[Firebase Auth Documentation for .signOut](https://firebase.google.com/docs/reference/ios/firebaseauth/api/reference/Classes/FIRAuth#-signout:).
+[Firebase Auth Documentation for .signOut](https://firebase.google.com/docs/reference/ios/firebaseauth/api eference/Classes/FIRAuth#-signout:).
 ​
 ​
 ### Here is a sample entry in a `users` collection:
