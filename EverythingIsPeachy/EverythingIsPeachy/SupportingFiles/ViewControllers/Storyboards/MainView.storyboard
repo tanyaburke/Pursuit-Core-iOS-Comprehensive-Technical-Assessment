@@ -209,10 +209,105 @@
             </objects>
             <point key="canvasLocation" x="13.043478260869566" y="906.69642857142856"/>
         </scene>
+        <!--Card Detail View Controller-->
+        <scene sceneID="V0c-Zg-OrL">
+            <objects>
+                <viewController storyboardIdentifier="cardDetailVc" id="6mr-kx-f6b" customClass="CardDetailViewController" customModule="AppStoreInteractiveTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="feV-iY-qDp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzd-XJ-HB1" userLabel="topmost guide view">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HJt-vr-R0K"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="mms-Qn-KjW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u3o-bL-rph" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1155.5"/>
+                                        <subviews>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qd-Xu-B1z" userLabel="Card Layout Standin View">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVa-Q4-P5C" customClass="CardContentView" customModule="AppStoreInteractiveTransition" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" secondItem="ZVa-Q4-P5C" secondAttribute="width" multiplier="1.3:1" priority="999" id="hly-vd-Caw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="backgroundImage" value="img1.png"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2s-8t-qzG">
+                                                <rect key="frame" x="0.0" y="538" width="414" height="617.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="P2s-8t-qzG" secondAttribute="trailing" id="9eu-Bx-4TS"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZVa-Q4-P5C" secondAttribute="trailing" id="EQP-gs-Lpn"/>
+                                            <constraint firstAttribute="bottom" secondItem="P2s-8t-qzG" secondAttribute="bottom" id="IoX-6J-5zt"/>
+                                            <constraint firstItem="ZVa-Q4-P5C" firstAttribute="leading" secondItem="u3o-bL-rph" secondAttribute="leading" id="JHF-lX-n8v"/>
+                                            <constraint firstItem="5qd-Xu-B1z" firstAttribute="centerX" secondItem="u3o-bL-rph" secondAttribute="centerX" id="LlL-OM-s6I"/>
+                                            <constraint firstItem="ZVa-Q4-P5C" firstAttribute="top" secondItem="u3o-bL-rph" secondAttribute="top" priority="999" id="OSP-nZ-7aQ"/>
+                                            <constraint firstItem="5qd-Xu-B1z" firstAttribute="width" secondItem="ZVa-Q4-P5C" secondAttribute="width" id="RB3-zp-GoP"/>
+                                            <constraint firstItem="P2s-8t-qzG" firstAttribute="leading" secondItem="u3o-bL-rph" secondAttribute="leading" id="T6Q-Wz-Vvg"/>
+                                            <constraint firstItem="5qd-Xu-B1z" firstAttribute="height" secondItem="ZVa-Q4-P5C" secondAttribute="height" id="VAX-QG-TEW"/>
+                                            <constraint firstItem="5qd-Xu-B1z" firstAttribute="top" secondItem="u3o-bL-rph" secondAttribute="top" id="bKB-yW-rk6"/>
+                                            <constraint firstItem="P2s-8t-qzG" firstAttribute="top" secondItem="5qd-Xu-B1z" secondAttribute="bottom" id="cxd-2a-ftM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="u3o-bL-rph" secondAttribute="bottom" id="ECE-g1-l07"/>
+                                    <constraint firstItem="u3o-bL-rph" firstAttribute="leading" secondItem="mms-Qn-KjW" secondAttribute="leading" id="lLx-RE-fDv"/>
+                                    <constraint firstItem="u3o-bL-rph" firstAttribute="top" secondItem="mms-Qn-KjW" secondAttribute="top" id="p2n-q0-cf5"/>
+                                    <constraint firstAttribute="trailing" secondItem="u3o-bL-rph" secondAttribute="trailing" id="xTq-gD-BO2"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="pMJ-q2-O4p"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aXH-5k-QUQ" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZVa-Q4-P5C" secondAttribute="bottom" id="4bl-3X-PZV"/>
+                            <constraint firstItem="rzd-XJ-HB1" firstAttribute="leading" secondItem="feV-iY-qDp" secondAttribute="leading" id="BZf-98-sim"/>
+                            <constraint firstAttribute="bottom" secondItem="mms-Qn-KjW" secondAttribute="bottom" id="CEw-YF-SQY"/>
+                            <constraint firstItem="mms-Qn-KjW" firstAttribute="top" secondItem="feV-iY-qDp" secondAttribute="top" id="FgC-5K-jza"/>
+                            <constraint firstItem="ZVa-Q4-P5C" firstAttribute="top" relation="lessThanOrEqual" secondItem="rzd-XJ-HB1" secondAttribute="top" id="P2C-ga-QRU"/>
+                            <constraint firstAttribute="trailing" secondItem="rzd-XJ-HB1" secondAttribute="trailing" id="XL6-Pn-7Tg"/>
+                            <constraint firstItem="u3o-bL-rph" firstAttribute="width" secondItem="feV-iY-qDp" secondAttribute="width" id="ryC-1e-CHi"/>
+                            <constraint firstAttribute="trailing" secondItem="mms-Qn-KjW" secondAttribute="trailing" id="uY7-dW-Rbe"/>
+                            <constraint firstItem="rzd-XJ-HB1" firstAttribute="top" secondItem="feV-iY-qDp" secondAttribute="top" id="wgS-65-ztZ"/>
+                            <constraint firstItem="mms-Qn-KjW" firstAttribute="leading" secondItem="feV-iY-qDp" secondAttribute="leading" id="xcM-Vf-Jhg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aXH-5k-QUQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="cardBottomToRootBottomConstraint" destination="4bl-3X-PZV" id="DHt-KO-hSh"/>
+                        <outlet property="cardContentView" destination="ZVa-Q4-P5C" id="uhY-9a-Wre"/>
+                        <outlet property="scrollView" destination="mms-Qn-KjW" id="v3k-fn-bMN"/>
+                        <outlet property="textView" destination="P2s-8t-qzG" id="a69-4i-u0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIf-2d-O6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064" y="-224"/>
+        </scene>
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="64" height="58"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="img1.png" width="16" height="16"/>
         <image name="mappin.and.ellipse" catalog="system" width="58" height="64"/>
     </resources>
 </document>
