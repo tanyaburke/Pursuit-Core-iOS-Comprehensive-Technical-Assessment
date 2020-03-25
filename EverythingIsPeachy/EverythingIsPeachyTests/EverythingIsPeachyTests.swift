@@ -516,6 +516,19 @@ let jsonData = """
             }
 """.data(using: .utf8)!
         
+        let titles1 =
+                   "Officers and other civic guardsmen of District II in Amsterdam, under the command of Captain Frans Banninck Cocq and Lieutenant Willem van Ruytenburch, known as ‘The Night Watch’"
+                
+          
+          // act
+          do {
+            let favItem = try JSONDecoder().decode(ArtObject.self, from: jsonData)
+            // assert
+            let supTitle = favItem.titles?.first
+            XCTAssertEqual(titles1, supTitle)
+          } catch {
+            XCTFail("decoding error: \(error)")
+          }
         
     }
 }
