@@ -31,7 +31,7 @@ struct ArtObject: Codable {
 
     let hasImage: Bool?
     let principalOrFirstMaker: PrincipalOrFirstMaker?
-    let longTitle: String //
+    let longTitle: String
     let showImage: Bool
     let permitDownload: Bool?
    
@@ -54,7 +54,7 @@ struct ArtObject: Codable {
     func addMusItem(_ favObject: ArtObject) {
         let db = Firestore.firestore()
         
-        let favMuseum = ArtObject(id: favObject.id, objectNumber: favObject.objectNumber, title: favObject.title, hasImage: favObject.hasImage, principalOrFirstMaker: favObject.principalOrFirstMaker, longTitle: favObject.longTitle, showImage: favObject.showImage, permitDownload: favObject.permitDownload, webImage: favObject.webImage, headerImage: favObject.headerImage, productionPlaces: favObject.productionPlaces, dateFavorited: favObject.dateFavorited, favorited: favObject.favorited, language: favObject.language, titles: favObject.titles, artObjectDescription: favObject.artObjectDescription, objectTypes: favObject.objectTypes, objectCollection: favObject.objectCollection, plaqueDescriptionEnglish: favObject.plaqueDescriptionEnglish, principalMaker: favObject.principalMaker, materials: favObject.materials)
+        let favMuseum = ArtObject(id: favObject.id, objectNumber: favObject.objectNumber, language: favObject.language ?? "", title: favObject.title, webImage: favObject.webImage, titles: favObject.titles, objectTypes: favObject.objectTypes, objectCollection: favObject.objectCollection, plaqueDescriptionEnglish: favObject.plaqueDescriptionEnglish, hasImage: favObject.hasImage, principalOrFirstMaker: favObject.principalOrFirstMaker, longTitle: favObject.longTitle, showImage: favObject.showImage, permitDownload: favObject.permitDownload, headerImage: favObject.headerImage, productionPlaces: favObject.productionPlaces, dateFavorited: favObject.dateFavorited, favorited: favObject.favorited, artObjectDescription: favObject.artObjectDescription, principalMaker: favObject.principalMaker, materials: favObject.materials)
         do {
             try db.collection("museumExperience").document("favMuseumItems").setData(from: favMuseum)
         } catch {
