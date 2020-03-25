@@ -10,7 +10,6 @@ import Foundation
 
 //   let empty = try? newJSONDecoder().decode(Embedded.self, from: jsonData)
 
-import Foundation
 
 //to load all events at a location that the user searches for.  Include an image, the name of the event, and the time the event starts | In addition to the info from the Table View, display the price ranges and a link to the event.
 
@@ -48,6 +47,29 @@ struct Event: Codable {
         case accessibility
     }
 }
+
+
+struct Attraction: Codable {
+    let name: String
+    let type: AttractionType
+    let id: String
+    let test: Bool
+    let url: String
+    let locale: Locale
+    let images: [Image]
+    let classifications: [TMClassification]
+    let upcomingEvents: AttractionUpcomingEvents
+    let links: AttractionLinks
+    let externalLinks: ExternalLinks?
+    let aliases: [String]?
+
+    enum CodingKeys: String, CodingKey {
+        case name, type, id, test, url, locale, images, classifications, upcomingEvents
+        case links = "_links"
+        case externalLinks, aliases
+    }
+}
+
 
 // MARK: - Accessibility
 struct Accessibility: Codable {
@@ -99,26 +121,26 @@ struct EventEmbedded: Codable {
 }
 
 // MARK: - Attraction
-struct Attraction: Codable {
-    let name: String
-    let type: AttractionType
-    let id: String
-    let test: Bool
-    let url: String
-    let locale: Locale
-    let images: [Image]
-    let classifications: [Classification]
-    let upcomingEvents: AttractionUpcomingEvents
-    let links: AttractionLinks
-    let externalLinks: ExternalLinks?
-    let aliases: [String]?
-
-    enum CodingKeys: String, CodingKey {
-        case name, type, id, test, url, locale, images, classifications, upcomingEvents
-        case links = "_links"
-        case externalLinks, aliases
-    }
-}
+//struct Attraction: Codable {
+//    let name: String
+//    let type: AttractionType
+//    let id: String
+//    let test: Bool
+//    let url: String
+//    let locale: Locale
+//    let images: [Image]
+//    let classifications: [Classification]
+//    let upcomingEvents: AttractionUpcomingEvents
+//    let links: AttractionLinks
+//    let externalLinks: ExternalLinks?
+//    let aliases: [String]?
+//
+//    enum CodingKeys: String, CodingKey {
+//        case name, type, id, test, url, locale, images, classifications, upcomingEvents
+//        case links = "_links"
+//        case externalLinks, aliases
+//    }
+//}
 
 // MARK: - ExternalLinks
 struct ExternalLinks: Codable {
