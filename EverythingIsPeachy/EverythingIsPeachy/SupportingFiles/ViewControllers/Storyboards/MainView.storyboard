@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="906.69642857142856"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Initial Collection View Controller-->
         <scene sceneID="k5d-9w-Yue">
             <objects>
-                <viewController storyboardIdentifier="CollectionViewController" id="pTH-F8-SQt" customClass="CollectionViewController" customModule="EverythingIsPeachy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionViewController" id="pTH-F8-SQt" customClass="InitialCollectionViewController" customModule="EverythingIsPeachy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quQ-ag-Z5v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="zxe-AB-jpq">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="zxe-AB-jpq">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="309"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KRf-eD-She">
@@ -126,6 +126,9 @@
                         <viewLayoutGuide key="safeArea" id="Z04-gt-Iym"/>
                     </view>
                     <navigationItem key="navigationItem" id="FSW-Jr-9ad"/>
+                    <connections>
+                        <outlet property="collectionView" destination="U6O-fS-emR" id="dhT-by-blY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVP-Ll-W2K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,7 +215,7 @@
         <!--Card Detail View Controller-->
         <scene sceneID="V0c-Zg-OrL">
             <objects>
-                <viewController storyboardIdentifier="cardDetailVc" id="6mr-kx-f6b" customClass="CardDetailViewController" customModule="AppStoreInteractiveTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cardDetailVc" id="6mr-kx-f6b" customClass="CardDetailViewController" customModule="EverythingIsPeachy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="feV-iY-qDp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,7 +237,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVa-Q4-P5C" customClass="CardContentView" customModule="AppStoreInteractiveTransition" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVa-Q4-P5C" customClass="CardContentView" customModule="EverythingIsPeachy" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>

@@ -12,21 +12,21 @@ import FirebaseFirestore
 
 class DatabaseService {
 
-static let itemsCollection = "items" // collections
 static let usersCollection = "users"
-static let commentsCollection = "comments" // sub-collection on an item document
-static let favoritesCollection = "favorites" // sub-collection on a user document
+    
+static let museumExperience = "museum" // collections
+static let ticketMasterExperience = "ticketMaster" // collections
 
-//review - firebase firestore hierachy
-// top lvl
-// collection -> document -> collection -> document -> collection -> document ->...
+static let museumCollection = "museumFavs" // sub-collection on an museumExperience document
+static let ticketCollection = "ticketFavs" // sub-collection on a ticketMasterExperience document
+
 
 //let's get a reference to the Firebase Firestore database
 
 private let db = Firestore.firestore()
 //refers to firestore database
     
-//
+
 //        public func createItem(itemName: String, price: Double, category: Category, displayName: String, completion: @escaping (Result<String, Error>) -> ()) {
 //            //"sellerID" - user.uuID
 //            guard let user = Auth.auth().currentUser else { return }
