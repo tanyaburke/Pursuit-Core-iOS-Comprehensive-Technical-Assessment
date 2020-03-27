@@ -7,11 +7,10 @@ target 'EverythingIsPeachy' do
 
   # Pods for EverythingIsPeachy
 pod 'Firebase/Auth'
-
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
-
 pod 'Kingfisher'
+pod 'FirebaseFirestoreSwift'
 
   target 'EverythingIsPeachyTests' do
     inherit! :search_paths

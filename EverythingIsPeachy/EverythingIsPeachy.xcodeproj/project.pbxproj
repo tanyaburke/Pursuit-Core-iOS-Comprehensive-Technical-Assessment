@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		21D5A0E0F9EA6CC02DA0FF73 /* Pods_EverythingIsPeachyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4F64F99A0662ABA705AAC5 /* Pods_EverythingIsPeachyTests.framework */; };
+		2E545CA12422D3EB00F01EBC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E545CA02422D3EB00F01EBC /* img1.png */; };
+		2E545CA4242410EC00F01EBC /* MuseumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA3242410EC00F01EBC /* MuseumModel.swift */; };
+		2E545CA6242657E500F01EBC /* MuseumDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */; };
+		2E545CA824265BDB00F01EBC /* TMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA724265BDB00F01EBC /* TMModel.swift */; };
 		2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B521242019B800F48CD9 /* AppDelegate.swift */; };
 		2E67B524242019B800F48CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B523242019B800F48CD9 /* SceneDelegate.swift */; };
 		2E67B526242019B800F48CD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B525242019B800F48CD9 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 		2E8EF2512421BC4D007C20F8 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2502421BC4D007C20F8 /* InitialViewController.swift */; };
 		2E8EF2542421BD3A007C20F8 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2532421BD3A007C20F8 /* InitialView.swift */; };
 		2E8EF2562421C077007C20F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2552421C077007C20F8 /* DetailView.swift */; };
+		2E8EF2582421D934007C20F8 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2572421D934007C20F8 /* DatabaseService.swift */; };
+		2E8EF25A2421DA62007C20F8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */; };
+		2E8EF25C2421DAB8007C20F8 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF25B2421DAB8007C20F8 /* StorageService.swift */; };
+		2E8EF25E2421DB89007C20F8 /* UIImgeView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */; };
 		2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */; };
 		2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29E224206BD400B5C85D /* LoginViewController.swift */; };
 		2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E424206CEC00B5C85D /* LoginView.storyboard */; };
@@ -27,7 +35,7 @@
 		2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */; };
 		2EDE29ED24215A1E00B5C85D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EC24215A1E00B5C85D /* TabBarController.swift */; };
 		2EDE29EF24215A4200B5C85D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */; };
-		2EDE29F324215AB900B5C85D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29F224215AB900B5C85D /* CollectionViewController.swift */; };
+		2EDE29F324215AB900B5C85D /* InitialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29F224215AB900B5C85D /* InitialCollectionViewController.swift */; };
 		2EDE29F524215BA200B5C85D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29F424215BA200B5C85D /* DetailViewController.swift */; };
 		2EDE29F72421A2A700B5C85D /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29F62421A2A700B5C85D /* MainView.storyboard */; };
 		D42266902A3074C9E916762B /* Pods_EverythingIsPeachy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417460B21D75D9C9232DBF80 /* Pods_EverythingIsPeachy.framework */; };
@@ -47,6 +55,10 @@
 		0BC85EFA0BC005088B883452 /* Pods-EverythingIsPeachy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachy.release.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachy/Pods-EverythingIsPeachy.release.xcconfig"; sourceTree = "<group>"; };
 		0BF9F2FF3CF0E9CBB8F5786E /* Pods-EverythingIsPeachyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachyTests.debug.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachyTests/Pods-EverythingIsPeachyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1483A4BAD09989BCE74A3C34 /* Pods-EverythingIsPeachyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachyTests.release.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachyTests/Pods-EverythingIsPeachyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E545CA02422D3EB00F01EBC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		2E545CA3242410EC00F01EBC /* MuseumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumModel.swift; sourceTree = "<group>"; };
+		2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetailModel.swift; sourceTree = "<group>"; };
+		2E545CA724265BDB00F01EBC /* TMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMModel.swift; sourceTree = "<group>"; };
 		2E67B51E242019B800F48CD9 /* EverythingIsPeachy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverythingIsPeachy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E67B521242019B800F48CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E67B523242019B800F48CD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,10 @@
 		2E8EF2502421BC4D007C20F8 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		2E8EF2532421BD3A007C20F8 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 		2E8EF2552421C077007C20F8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		2E8EF2572421D934007C20F8 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2E8EF25B2421DAB8007C20F8 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImgeView+Extension.swift"; sourceTree = "<group>"; };
 		2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
 		2EDE29E224206BD400B5C85D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EDE29E424206CEC00B5C85D /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
@@ -70,7 +86,7 @@
 		2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		2EDE29EC24215A1E00B5C85D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		2EDE29F224215AB900B5C85D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2EDE29F224215AB900B5C85D /* InitialCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCollectionViewController.swift; sourceTree = "<group>"; };
 		2EDE29F424215BA200B5C85D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		2EDE29F62421A2A700B5C85D /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		3AD5547FF84104924C5DF22D /* Pods-EverythingIsPeachy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachy.debug.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachy/Pods-EverythingIsPeachy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +123,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2E545CA22422D8E000F01EBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E545CA724265BDB00F01EBC /* TMModel.swift */,
+				2E545CA3242410EC00F01EBC /* MuseumModel.swift */,
+				2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */,
+			);
+			name = Models;
+			path = SupportingFiles/ViewControllers/Extensions/Views/Models;
+			sourceTree = "<group>";
+		};
 		2E67B515242019B800F48CD9 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +159,7 @@
 			children = (
 				2EDE29DF2420675C00B5C85D /* New Group */,
 				2EDE29DA2420662700B5C85D /* FirebaseServices */,
+				2E545CA22422D8E000F01EBC /* Models */,
 				2EDE29E624206CF700B5C85D /* Storyboards */,
 				2EDE29E9242082BC00B5C85D /* Extensions */,
 				2E8EF2522421BC58007C20F8 /* Views */,
@@ -169,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */,
+				2E8EF2572421D934007C20F8 /* DatabaseService.swift */,
+				2E8EF25B2421DAB8007C20F8 /* StorageService.swift */,
 			);
 			path = FirebaseServices;
 			sourceTree = "<group>";
@@ -183,6 +213,7 @@
 		2EDE29E024206B3700B5C85D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2E545CA02422D3EB00F01EBC /* img1.png */,
 				2E8EF24C2421A564007C20F8 /* peachy.gif */,
 				2E67B523242019B800F48CD9 /* SceneDelegate.swift */,
 				2E67B521242019B800F48CD9 /* AppDelegate.swift */,
@@ -197,7 +228,7 @@
 				2EDE29E224206BD400B5C85D /* LoginViewController.swift */,
 				2EDE29EC24215A1E00B5C85D /* TabBarController.swift */,
 				2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */,
-				2EDE29F224215AB900B5C85D /* CollectionViewController.swift */,
+				2EDE29F224215AB900B5C85D /* InitialCollectionViewController.swift */,
 				2EDE29F424215BA200B5C85D /* DetailViewController.swift */,
 				2E8EF24A2421A42C007C20F8 /* SettingsViewController.swift */,
 			);
@@ -219,6 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */,
+				2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */,
+				2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */,
 				2E8EF24E2421BC2D007C20F8 /* GIF+Extension.swift */,
 			);
 			name = Extensions;
@@ -322,6 +355,7 @@
 			files = (
 				2E8EF24D2421A564007C20F8 /* peachy.gif in Resources */,
 				2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */,
+				2E545CA12422D3EB00F01EBC /* img1.png in Resources */,
 				2EDE29E824206F5C00B5C85D /* GoogleService-Info.plist in Resources */,
 				2EDE29F72421A2A700B5C85D /* MainView.storyboard in Resources */,
 				2E67B52E242019BB00F48CD9 /* LaunchScreen.storyboard in Resources */,
@@ -407,12 +441,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EDE29F324215AB900B5C85D /* CollectionViewController.swift in Sources */,
+				2EDE29F324215AB900B5C85D /* InitialCollectionViewController.swift in Sources */,
 				2E8EF2512421BC4D007C20F8 /* InitialViewController.swift in Sources */,
 				2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */,
 				2E8EF24B2421A42C007C20F8 /* SettingsViewController.swift in Sources */,
+				2E8EF25E2421DB89007C20F8 /* UIImgeView+Extension.swift in Sources */,
+				2E545CA4242410EC00F01EBC /* MuseumModel.swift in Sources */,
+				2E545CA824265BDB00F01EBC /* TMModel.swift in Sources */,
+				2E8EF25A2421DA62007C20F8 /* UIViewController+Extension.swift in Sources */,
 				2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */,
 				2E8EF2542421BD3A007C20F8 /* InitialView.swift in Sources */,
+				2E8EF25C2421DAB8007C20F8 /* StorageService.swift in Sources */,
+				2E8EF2582421D934007C20F8 /* DatabaseService.swift in Sources */,
+				2E545CA6242657E500F01EBC /* MuseumDetailModel.swift in Sources */,
 				2EDE29EF24215A4200B5C85D /* FavoritesViewController.swift in Sources */,
 				2E67B526242019B800F48CD9 /* ViewController.swift in Sources */,
 				2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */,
