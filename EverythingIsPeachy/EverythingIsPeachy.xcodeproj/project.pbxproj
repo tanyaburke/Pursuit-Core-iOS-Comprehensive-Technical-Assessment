@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		21D5A0E0F9EA6CC02DA0FF73 /* Pods_EverythingIsPeachyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4F64F99A0662ABA705AAC5 /* Pods_EverythingIsPeachyTests.framework */; };
+		2E2EBDCC242D510100991472 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EBDCB242D510100991472 /* APIClient.swift */; };
 		2E545CA12422D3EB00F01EBC /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E545CA02422D3EB00F01EBC /* img1.png */; };
 		2E545CA4242410EC00F01EBC /* MuseumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA3242410EC00F01EBC /* MuseumModel.swift */; };
-		2E545CA6242657E500F01EBC /* MuseumDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */; };
 		2E545CA824265BDB00F01EBC /* TMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E545CA724265BDB00F01EBC /* TMModel.swift */; };
 		2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B521242019B800F48CD9 /* AppDelegate.swift */; };
 		2E67B524242019B800F48CD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67B523242019B800F48CD9 /* SceneDelegate.swift */; };
@@ -28,11 +28,15 @@
 		2E8EF25A2421DA62007C20F8 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */; };
 		2E8EF25C2421DAB8007C20F8 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF25B2421DAB8007C20F8 /* StorageService.swift */; };
 		2E8EF25E2421DB89007C20F8 /* UIImgeView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */; };
+		2E8EF57E243205F10083ADE9 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8EF57D243205F10083ADE9 /* Extention.swift */; };
+		2E92C9C1242C3E1900AA5E11 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92C9C0242C3E1900AA5E11 /* Experience.swift */; };
+		2E92C9CE242CAF5C00AA5E11 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92C9CD242CAF5C00AA5E11 /* EmptyView.swift */; };
+		2E92C9D1242CB54600AA5E11 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E92C9D0242CB54600AA5E11 /* APIKey.swift */; };
+		2EBFA8B22460C32C004DF18F /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2EBFA8B12460C32C004DF18F /* ImageKit */; };
 		2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */; };
 		2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29E224206BD400B5C85D /* LoginViewController.swift */; };
 		2EDE29E524206CEC00B5C85D /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E424206CEC00B5C85D /* LoginView.storyboard */; };
 		2EDE29E824206F5C00B5C85D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EDE29E724206F5B00B5C85D /* GoogleService-Info.plist */; };
-		2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */; };
 		2EDE29ED24215A1E00B5C85D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EC24215A1E00B5C85D /* TabBarController.swift */; };
 		2EDE29EF24215A4200B5C85D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */; };
 		2EDE29F324215AB900B5C85D /* InitialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDE29F224215AB900B5C85D /* InitialCollectionViewController.swift */; };
@@ -55,9 +59,9 @@
 		0BC85EFA0BC005088B883452 /* Pods-EverythingIsPeachy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachy.release.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachy/Pods-EverythingIsPeachy.release.xcconfig"; sourceTree = "<group>"; };
 		0BF9F2FF3CF0E9CBB8F5786E /* Pods-EverythingIsPeachyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachyTests.debug.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachyTests/Pods-EverythingIsPeachyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1483A4BAD09989BCE74A3C34 /* Pods-EverythingIsPeachyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EverythingIsPeachyTests.release.xcconfig"; path = "Target Support Files/Pods-EverythingIsPeachyTests/Pods-EverythingIsPeachyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E2EBDCB242D510100991472 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		2E545CA02422D3EB00F01EBC /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 		2E545CA3242410EC00F01EBC /* MuseumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumModel.swift; sourceTree = "<group>"; };
-		2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumDetailModel.swift; sourceTree = "<group>"; };
 		2E545CA724265BDB00F01EBC /* TMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMModel.swift; sourceTree = "<group>"; };
 		2E67B51E242019B800F48CD9 /* EverythingIsPeachy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverythingIsPeachy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E67B521242019B800F48CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,11 +83,14 @@
 		2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2E8EF25B2421DAB8007C20F8 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImgeView+Extension.swift"; sourceTree = "<group>"; };
+		2E8EF57D243205F10083ADE9 /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
+		2E92C9C0242C3E1900AA5E11 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		2E92C9CD242CAF5C00AA5E11 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		2E92C9D0242CB54600AA5E11 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		2EDE29DB2420666F00B5C85D /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
 		2EDE29E224206BD400B5C85D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2EDE29E424206CEC00B5C85D /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		2EDE29E724206F5B00B5C85D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		2EDE29EC24215A1E00B5C85D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2EDE29EE24215A4200B5C85D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		2EDE29F224215AB900B5C85D /* InitialCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCollectionViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42266902A3074C9E916762B /* Pods_EverythingIsPeachy.framework in Frameworks */,
+				2EBFA8B22460C32C004DF18F /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,12 +134,11 @@
 		2E545CA22422D8E000F01EBC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2E92C9C0242C3E1900AA5E11 /* Experience.swift */,
 				2E545CA724265BDB00F01EBC /* TMModel.swift */,
 				2E545CA3242410EC00F01EBC /* MuseumModel.swift */,
-				2E545CA5242657E500F01EBC /* MuseumDetailModel.swift */,
 			);
-			name = Models;
-			path = SupportingFiles/ViewControllers/Extensions/Views/Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2E67B515242019B800F48CD9 = {
@@ -157,9 +164,11 @@
 		2E67B520242019B800F48CD9 /* EverythingIsPeachy */ = {
 			isa = PBXGroup;
 			children = (
-				2EDE29DF2420675C00B5C85D /* New Group */,
-				2EDE29DA2420662700B5C85D /* FirebaseServices */,
+				2E92C9CF242CB3AF00AA5E11 /* Secrets */,
+				2EDE29DF2420675C00B5C85D /* API */,
+				2E8EF57F24320D840083ADE9 /* JSonData */,
 				2E545CA22422D8E000F01EBC /* Models */,
+				2EDE29DA2420662700B5C85D /* FirebaseServices */,
 				2EDE29E624206CF700B5C85D /* Storyboards */,
 				2EDE29E9242082BC00B5C85D /* Extensions */,
 				2E8EF2522421BC58007C20F8 /* Views */,
@@ -188,9 +197,33 @@
 			children = (
 				2E8EF2532421BD3A007C20F8 /* InitialView.swift */,
 				2E8EF2552421C077007C20F8 /* DetailView.swift */,
+				2E92C9CD242CAF5C00AA5E11 /* EmptyView.swift */,
+				2E92C9C2242C4B6B00AA5E11 /* DetailInfo */,
 			);
 			name = Views;
 			path = SupportingFiles/ViewControllers/Extensions/Views;
+			sourceTree = "<group>";
+		};
+		2E8EF57F24320D840083ADE9 /* JSonData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSonData;
+			sourceTree = "<group>";
+		};
+		2E92C9C2242C4B6B00AA5E11 /* DetailInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailInfo;
+			sourceTree = "<group>";
+		};
+		2E92C9CF242CB3AF00AA5E11 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				2E92C9D0242CB54600AA5E11 /* APIKey.swift */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 		2EDE29DA2420662700B5C85D /* FirebaseServices */ = {
@@ -203,11 +236,12 @@
 			path = FirebaseServices;
 			sourceTree = "<group>";
 		};
-		2EDE29DF2420675C00B5C85D /* New Group */ = {
+		2EDE29DF2420675C00B5C85D /* API */ = {
 			isa = PBXGroup;
 			children = (
+				2E2EBDCB242D510100991472 /* APIClient.swift */,
 			);
-			path = "New Group";
+			path = API;
 			sourceTree = "<group>";
 		};
 		2EDE29E024206B3700B5C85D /* SupportingFiles */ = {
@@ -249,8 +283,8 @@
 		2EDE29E9242082BC00B5C85D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2EDE29EA2420836C00B5C85D /* UIViewController+Navigation.swift */,
 				2E8EF2592421DA62007C20F8 /* UIViewController+Extension.swift */,
+				2E8EF57D243205F10083ADE9 /* Extention.swift */,
 				2E8EF25D2421DB89007C20F8 /* UIImgeView+Extension.swift */,
 				2E8EF24E2421BC2D007C20F8 /* GIF+Extension.swift */,
 			);
@@ -287,6 +321,9 @@
 			dependencies = (
 			);
 			name = EverythingIsPeachy;
+			packageProductDependencies = (
+				2EBFA8B12460C32C004DF18F /* ImageKit */,
+			);
 			productName = EverythingIsPeachy;
 			productReference = 2E67B51E242019B800F48CD9 /* EverythingIsPeachy.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +375,9 @@
 				Base,
 			);
 			mainGroup = 2E67B515242019B800F48CD9;
+			packageReferences = (
+				2EBFA8B02460C32C004DF18F /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 2E67B51F242019B800F48CD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,22 +483,25 @@
 			files = (
 				2EDE29F324215AB900B5C85D /* InitialCollectionViewController.swift in Sources */,
 				2E8EF2512421BC4D007C20F8 /* InitialViewController.swift in Sources */,
-				2EDE29EB2420836C00B5C85D /* UIViewController+Navigation.swift in Sources */,
 				2E8EF24B2421A42C007C20F8 /* SettingsViewController.swift in Sources */,
+				2E92C9CE242CAF5C00AA5E11 /* EmptyView.swift in Sources */,
 				2E8EF25E2421DB89007C20F8 /* UIImgeView+Extension.swift in Sources */,
 				2E545CA4242410EC00F01EBC /* MuseumModel.swift in Sources */,
 				2E545CA824265BDB00F01EBC /* TMModel.swift in Sources */,
 				2E8EF25A2421DA62007C20F8 /* UIViewController+Extension.swift in Sources */,
+				2E2EBDCC242D510100991472 /* APIClient.swift in Sources */,
 				2EDE29DC2420666F00B5C85D /* AuthenticationSession.swift in Sources */,
 				2E8EF2542421BD3A007C20F8 /* InitialView.swift in Sources */,
 				2E8EF25C2421DAB8007C20F8 /* StorageService.swift in Sources */,
 				2E8EF2582421D934007C20F8 /* DatabaseService.swift in Sources */,
-				2E545CA6242657E500F01EBC /* MuseumDetailModel.swift in Sources */,
 				2EDE29EF24215A4200B5C85D /* FavoritesViewController.swift in Sources */,
 				2E67B526242019B800F48CD9 /* ViewController.swift in Sources */,
 				2E67B522242019B800F48CD9 /* AppDelegate.swift in Sources */,
 				2EDE29ED24215A1E00B5C85D /* TabBarController.swift in Sources */,
 				2E8EF24F2421BC2D007C20F8 /* GIF+Extension.swift in Sources */,
+				2E92C9D1242CB54600AA5E11 /* APIKey.swift in Sources */,
+				2E8EF57E243205F10083ADE9 /* Extention.swift in Sources */,
+				2E92C9C1242C3E1900AA5E11 /* Experience.swift in Sources */,
 				2EDE29F524215BA200B5C85D /* DetailViewController.swift in Sources */,
 				2EDE29E324206BD400B5C85D /* LoginViewController.swift in Sources */,
 				2E8EF2562421C077007C20F8 /* DetailView.swift in Sources */,
@@ -725,6 +768,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2EBFA8B02460C32C004DF18F /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2EBFA8B12460C32C004DF18F /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2EBFA8B02460C32C004DF18F /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E67B516242019B800F48CD9 /* Project object */;
 }

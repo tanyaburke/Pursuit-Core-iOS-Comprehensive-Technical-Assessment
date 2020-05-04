@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
        }
        
        private let storageService = StorageService()
-       private var databaseService = DatabaseService()
+//       private var databaseService = DatabaseService()
        
 //       private var viewState: ViewState = .myItems {
 //           didSet {
@@ -45,7 +45,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .link
+        view.backgroundColor = .systemGroupedBackground
     }
     
 
