@@ -11,7 +11,7 @@ pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
 pod 'Kingfisher'
 pod 'FirebaseFirestoreSwift'
-
+pod 'collection-view-layouts/FlickrLayout'
   target 'EverythingIsPeachyTests' do
     inherit! :search_paths
     # Pods for testing

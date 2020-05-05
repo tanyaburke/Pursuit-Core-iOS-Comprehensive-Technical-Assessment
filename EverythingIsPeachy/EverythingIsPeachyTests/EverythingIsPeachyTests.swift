@@ -14,10 +14,10 @@ class EverythingIsPeachyTests: XCTestCase {
     func testMuseumStuff(){
         
         
-        let jsonData = """
-    {
-    "elapsedMilliseconds": 0,
-    "count": 3508,
+let jsonData = """
+                {
+                "elapsedMilliseconds": 0,
+                "count": 3508,
     "countFacets": {
         "hasimage": 2826,
         "ondisplay": 13
@@ -158,7 +158,7 @@ class EverythingIsPeachyTests: XCTestCase {
         
         // act
         do {
-            let museumStuff = try JSONDecoder().decode(Empty.self, from: jsonData)
+            let museumStuff = try JSONDecoder().decode(Museum.self, from: jsonData)
             // assert
             let supTitle = museumStuff.artObjects[2].title
             XCTAssertEqual(expectedTitle, supTitle)
@@ -167,365 +167,476 @@ class EverythingIsPeachyTests: XCTestCase {
         }
     }
     
-    func testMuseumFav(){
+    func testTM(){
 let jsonData = """
                 {
-            "elapsedMilliseconds": 113,
-            "artObject": {
-            "links": {
-            "search": "http://www.rijksmuseum.nl/api/nl/collection"
-                },
-            "id": "en-SK-C-5",
-            "priref": "5216",
-            "objectNumber": "SK-C-5",
-            "language": "en",
-            "title": "Night Watch, Militia Company of District II under the Command of Captain Frans Banninck Cocq",
-            "copyrightHolder": null,
-            "webImage": {
-            "guid": "aa08df9c-0af9-4195-b31b-f578fbe0a4c9",
-            "offsetPercentageX": 50,
-            "offsetPercentageY": 100,
-            "width": 2500,
-            "height": 2034,
-            "url": "https://lh3.googleusercontent.com/J-mxAE7CPu-DXIOx4QKBtb0GC4ud37da1QK7CzbTIDswmvZHXhLm4Tv2-1H3iBXJWAW_bHm7dMl3j5wv_XiWAg55VOM=s0"
-        },
-        "colors": [
-            {
-                "percentage": 81,
-                "hex": "#261808"
-            },
-            {
-                "percentage": 9,
-                "hex": " #5E3C14"
-            },
-            {
-                "percentage": 3,
-                "hex": " #9C8238"
-            },
-            {
-                "percentage": 2,
-                "hex": " #885617"
-            },
-            {
-                "percentage": 1,
-                "hex": " #AF9F6B"
-            },
-            {
-                "percentage": 0,
-                "hex": " #6C6238"
-            },
-            {
-                "percentage": 0,
-                "hex": " #D7CB9E"
-            }
-        ],
-        "colorsWithNormalization": [
-            {
-                "originalHex": "#261808",
-                "normalizedHex": "#000000"
-            },
-            {
-                "originalHex": " #5E3C14",
-                "normalizedHex": "#B35A1F"
-            },
-            {
-                "originalHex": " #9C8238",
-                "normalizedHex": "#E09714"
-            },
-            {
-                "originalHex": " #885617",
-                "normalizedHex": "#B35A1F"
-            },
-            {
-                "originalHex": " #AF9F6B",
-                "normalizedHex": "#E0CC91"
-            },
-            {
-                "originalHex": " #6C6238",
-                "normalizedHex": "#367614"
-            },
-            {
-                "originalHex": " #D7CB9E",
-                "normalizedHex": "#E0CC91"
-            }
-        ],
-        "normalizedColors": [
-            {
-                "percentage": 81,
-                "hex": "#000000"
-            },
-            {
-                "percentage": 12,
-                "hex": " #8B4513"
-            },
-            {
-                "percentage": 3,
-                "hex": " #B8860B"
-            },
-            {
-                "percentage": 1,
-                "hex": " #BDB76B"
-            },
-            {
-                "percentage": 0,
-                "hex": " #556B2F"
-            },
-            {
-                "percentage": 0,
-                "hex": " #F5DEB3"
-            }
-        ],
-        "normalized32Colors": [
-            {
-                "percentage": 81,
-                "hex": "#000000"
-            },
-            {
-                "percentage": 12,
-                "hex": " #B35A1F"
-            },
-            {
-                "percentage": 3,
-                "hex": " #E09714"
-            },
-            {
-                "percentage": 2,
-                "hex": " #E0CC91"
-            },
-            {
-                "percentage": 0,
-                "hex": " #367614"
-            }
-        ],
-        "titles": [
-            "Officers and other civic guardsmen of District II in Amsterdam, under the command of Captain Frans Banninck Cocq and Lieutenant Willem van Ruytenburch, known as ‘The Night Watch’",
-            "The company of Captain Frans Banninck Cocq and Lieutenant Willem van Ruytenburch, known as 'The nightwatch'"
-        ],
-        "description": "Officieren en andere schutters van wijk II in Amsterdam onder leiding van kapitein Frans Banninck Cocq en luitenant Willem van Ruytenburch, sinds het einde van de 18de eeuw bekend als ‘De Nachtwacht’. Schutters van de Kloveniersdoelen uit een poort naar buiten tredend. Op een schild aangebracht naast de poort staan de namen van de afgebeelde personen: Frans Banning Cocq, heer van purmerlant en Ilpendam, Capiteijn Willem van Ruijtenburch van Vlaerdingen, heer van Vlaerdingen, Lu[ij]tenant, Jan Visscher Cornelisen Vaendrich, Rombout Kemp Sergeant, Reijnier Engelen Sergeant, Barent Harmansen, Jan Adriaensen Keyser, Elbert Willemsen, Jan Clasen Leydeckers, Jan Ockersen, Jan Pietersen bronchorst, Harman Iacobsen wormskerck, Jacob Dircksen de Roy, Jan vander heede, Walich Schellingwou, Jan brugman, Claes van Cruysbergen, Paulus Schoonhoven. De schutters zijn gewapend met onder anderen pieken, musketten en hellebaarden. Rechts de tamboer met een grote trommel. Tussen de soldaten links staat een meisje met een dode kip om haar middel, rechts een blaffende hond. Linksboven de vaandrig met de uitgestoken vaandel.",
-        "labelText": null,
-        "objectTypes": [
-            "painting"
-        ],
-        "objectCollection": [
-            "paintings"
-        ],
-        "makers": [],
-        "principalMakers": [
-            {
-                "name": "Rembrandt van Rijn",
-                "unFixedName": null,
-                "placeOfBirth": "Leiden",
-                "dateOfBirth": "1606-07-15",
-                "dateOfBirthPrecision": null,
-                "dateOfDeath": "1669-10-08",
-                "dateOfDeathPrecision": null,
-                "placeOfDeath": "Amsterdam",
-                "occupation": [
-                    "print maker",
-                    "draughtsman",
-                    "painter"
-                ],
-                "roles": [
-                    "painter"
-                ],
-                "nationality": "Noord-Nederlands",
-                "biography": null,
-                "productionPlaces": [
-                    "Amsterdam"
-                ],
-                "qualification": null
-            }
-        ],
-        "plaqueDescriptionDutch": "Rembrandts beroemdste en grootste doek werd gemaakt voor de Kloveniersdoelen. Dit was een van de verenigingsgebouwen van de Amsterdamse schutterij, de burgerwacht van de stad. \r\nRembrandt was de eerste die op een groepsportret de figuren in actie weergaf. De kapitein, in het zwart, geeft zijn luitenant opdracht dat de compagnie moet gaan marcheren. De schutters stellen zich op. Met behulp van licht vestigde Rembrandt de aandacht op belangrijke details, zoals het handgebaar van de kapitein en het kleine meisje op de achtergrond. Zij is de mascotte van de schutters.",
-        "plaqueDescriptionEnglish": "Rembrandt’s largest, most famous canvas was made for the Arquebusiers guild hall. This was one of several halls of Amsterdam’s civic guard, the city’s militia and police. \r\nRembrandt was the first to paint figures in a group portrait actually doing something. The captain, dressed in black, is telling his lieutenant to start the company marching. The guardsmen are getting into formation. Rembrandt used the light to focus on particular details, like the captain’s gesturing hand and the young girl in the foreground. She was the company mascot.\r\n",
-        "principalMaker": "Rembrandt van Rijn",
-        "artistRole": null,
-        "associations": [],
-        "acquisition": {
-            "method": "loan",
-            "date": "1808-01-01T00:00:00",
-            "creditLine": "On loan from the City of Amsterdam"
-        },
-        "exhibitions": [],
-        "materials": [
-            "canvas",
-            "oil paint (paint)"
-        ],
-        "techniques": [],
-        "productionPlaces": [
-            "Amsterdam"
-        ],
-        "dating": {
-            "presentingDate": "1642",
-            "sortingDate": 1642,
-            "period": 17,
-            "yearEarly": 1642,
-            "yearLate": 1642
-        },
-        "classification": {
-            "iconClassIdentifier": [
-                "45(+26)",
-                "45C1",
-                "48C7341",
-                "31D11222",
-                "45D12",
-                "34B11"
-            ],
-            "iconClassDescription": [
-                "warfare; military affairs (+ citizen soldiery, civil guard, citizen militia)",
-                "weapons",
-                "drum (musical instrument)",
-                "girl (child between toddler and youth)",
-                "(military) standard-bearer",
-                "dog"
-            ],
-            "motifs": [],
-            "events": [],
-            "periods": [],
-            "places": [
-                "Amsterdam"
-            ],
-            "people": [
-                "Banninck Cocq, Frans",
-                "Ruytenburch, Willem van",
-                "Visscher Cornelisen, Jan",
-                "Kemp, Rombout",
-                "Engelen, Reijnier Janszn",
-                "Bolhamer, Barent Harmansen",
-                "Keijser, Jan Adriaensen",
-                "Willemsen, Elbert",
-                "Leijdeckers, Jan Claesen",
-                "Ockersen, Jan",
-                "Bronchorst, Jan Pietersen",
-                "Wormskerck, Harman Jacobsen",
-                "Roy, Jacob Dircksen de",
-                "Heede, Jan van der"
-            ],
-            "objectNumbers": [
-                "SK-C-5"
-            ]
-        },
-        "hasImage": true,
-        "historicalPersons": [
-            "Banninck Cocq, Frans",
-            "Ruytenburch, Willem van",
-            "Visscher Cornelisen, Jan",
-            "Kemp, Rombout",
-            "Engelen, Reijnier Janszn",
-            "Bolhamer, Barent Harmansen",
-            "Keijser, Jan Adriaensen",
-            "Willemsen, Elbert",
-            "Leijdeckers, Jan Claesen",
-            "Ockersen, Jan",
-            "Bronchorst, Jan Pietersen",
-            "Wormskerck, Harman Jacobsen",
-            "Roy, Jacob Dircksen de",
-            "Heede, Jan van der"
-        ],
-        "inscriptions": [],
-        "documentation": [
-            "The Rembrandt Database,  Object information, Rembrandt,  Civic guardsmen of Amsterdam under command of Banninck Cocq,  dated 1642, Rijksmuseum, Amsterdam, inv. no. SK-C-5, http://www.rembrandtdatabase.org/Rembrandt/painting/3063/civic-guardsmen-of-amsterdam-under-command-of-banninck-cocq, accessed 2016 February 01",
-            "Inzoomer object op zaal, 2013 (Nederlands/English).",
-            "A. Jensen Adams, Public Faces and Private Identities in Seventeenth-Century Holland, Portraiture and the Production of Community, New York 2009, p. 211-217, fig. 60.",
-            "M. Rayssac, 'l'Exode des Musées, Histoire des oeuvres d'art sous l'Occupation', Parijs 2007.",
-            "K.M. Groen, 'Earth Matters, The origin of the material used for the preparation of the Nightwatch and many other canvases in Rembrandt's workshop after 1640', Art Matters, volume 3, p. 138.",
-            "E. Runia. A. van Suchtelen, Rembrandt, Den Haag 2006, p. 14.",
-            "Y. van Veelen, 'Work in progress. De strijd om de Nachtwacht', Kunstbeeld nr. 12/1 (dec. 2004/jan. 2005), p. 44-47.",
-            "'Omtrents Rembrandts Nachtwacht', Kunstkrant Rijksmuseum Amsterdam nr. 1 (1998), p. 14-20.",
-            "H. van Os, in: Bulletin van het Rijksmuseum nr. 4 (1996), p. 309-320 + afb.",
-            "J. Boomgaard, 'De Verloren Zoon. Rembrandt en de Nederlandse Kunstgeschiedenisbeschrijving', Kunstreeks (1995).",
-            "P. Taylor, 'Darkness at Noon. Rembrandts Nachtwacht', Kunstschrift 6 (1994), p. 22-27 + afb.",
-            "Fieke Tissink, 'Hoofdstuk uit het Rijksmuseum', Rijksmuseum Kunstkrant 19 (1993) nr. 3, p. 14-18.",
-            "O. Pacht, 'Rembrandt', Munchen 1991, p. 19-30 + ill.",
-            "A.K. Wheelock, 'The Age of Rembrandt', Studies in seventeenth Century Dutch Painting (The Pennsylvania State University, 1988), p. 215, 223 (afb.).",
-            "J.B. Bedaux, 'Een achttiende eeuwse kunsttheoretische discussie', Kunstlicht 15 (1985), p. 25-28.",
-            "C. Grimm, 'Handschrift, schildertechniek en beeldstructuur. Bijdrage tot het onderzoek naar toeschrijving, I: de helmen van Rembrandt', Tableau (1982/83), p. 246-248, afb. 5.",
-            "E. van de Wetering, 'Ontrouw aan Rembrandt', Kunstschrift (Openbaar Kunstbezit) (1982), p. 166-167, 171, afb. 24-26.",
-            "K. Clark, 'What is a masterpiece?', Portfolio. The Magazine of the Visual Arts, 2 (1980), p. 51 + afb.",
-            "H. Günther, 'Damals oder heute unverstanden. Zum Problem von Rembrandts Nachtwache', Welkunst 50 (1980), p. 1848-1850 + afb.",
-            "U. Schumacher, 'Gruppenporträt und Genrebild. Zur Deutung der Photographie fur die franzosische Malerei des 19. Jahrhunderts, Giessener Beiträge zur Kunstgeschichte 4 (1979), p. 29, afb. 11.",
-            "M.M. Toth-Ubbens, 'De barbier van Amsterdam. Aantekeningen over de relaties tussen het Waaggebouw en de Schouwburg in de zeventiende eeuw', Antiek 10 (1975), p. 388, afb. 12.",
-            "H. Gerson, 'De Nachtwacht', Openbaar Kunstbezit, 10e jaargang, januari (1966).",
-            "Chr. White, 'Rembrandt', Den Haag 1964, p. 65, 66 + afb.",
-            "A.J. Moes-Veth, 'Rembrandt's Claudius Civilis en de Nachtwacht van terzijde beschouwd, Oud Holland LXXV (1960), p. 143.",
-            "A.J. Moes-Veth, 'De Nachtwacht en haar oude copieen', Oud Holland LXII (1947), p. 188.",
-            "J.A. Overhoff, 'De Nachtwacht op zwerftocht' (het schilderij ten tijde van WO II), http://www.cacciucco.nl/artikelen/kunst/de_nachtwacht_op_zwerftocht.html [2016]",
-            "J.A. Overhoff, 'THE NIGHT WATCH ODYSSEY' (the painting during WWII) , http://www.cacciucco.nl/english/the_night_watch_odyssey.html [2017]"
-        ],
-        "catRefRPK": [],
-        "principalOrFirstMaker": "Rembrandt van Rijn",
-        "dimensions": [
-            {
-                "unit": "cm",
-                "type": "height",
-                "part": null,
-                "value": "379.5"
-            },
-            {
-                "unit": "cm",
-                "type": "width",
-                "part": null,
-                "value": "453.5"
-            },
-            {
-                "unit": "kg",
-                "type": "weight",
-                "part": null,
-                "value": "337"
-            },
-            {
-                "unit": "kg",
-                "type": "weight",
-                "part": null,
-                "value": "170"
-            }
-        ],
-        "physicalProperties": [],
-        "physicalMedium": "oil on canvas",
-        "longTitle": "Night Watch, Militia Company of District II under the Command of Captain Frans Banninck Cocq, Rembrandt van Rijn, 1642",
-        "subTitle": "h 379.5cm × w 453.5cm × w 337kg",
-        "scLabelLine": "Rembrandt van Rijn (1606-1669), oil on canvas, 1642",
-        "label": {
-            "title": "Night Watch, Militia Company of District II under the Command of Captain Frans Banninck Cocq",
-            "makerLine": "Rembrandt van Rijn (1606-1669), oil on canvas, 1642",
-            "description": "Rembrandt’s largest, most famous canvas was made for the Arquebusiers guild hall. This was one of several halls of Amsterdam’s civic guard, the city’s militia and police. Rembrandt was the first to paint figures in a group portrait actually doing something. The captain, dressed in black, is telling his lieutenant to start the company marching. The guardsmen are getting into formation. Rembrandt used the light to focus on particular details, like the captain’s gesturing hand and the young girl in the foreground. She was the company mascot. The nickname Night Watch originated much later, when the painting was thought to represent a nocturnal scene.",
-            "notes": "Multimediatour, 500",
-            "date": "2019-07-01"
-        },
-        "showImage": true,
-        "location": "HG-2.31"
-    },
-    "artObjectPage": {
-        "id": "en-SK-C-5",
-        "similarPages": [],
-        "lang": "en",
-        "objectNumber": "SK-C-5",
-        "tags": [],
-        "plaqueDescription": "Rembrandt’s largest, most famous canvas was made for the Arquebusiers guild hall. This was one of several halls of Amsterdam’s civic guard, the city’s militia and police. \r\nRembrandt was the first to paint figures in a group portrait actually doing something. The captain, dressed in black, is telling his lieutenant to start the company marching. The guardsmen are getting into formation. Rembrandt used the light to focus on particular details, like the captain’s gesturing hand and the young girl in the foreground. She was the company mascot.\r\n",
-        "audioFile1": null,
-        "audioFileLabel1": null,
-        "audioFileLabel2": null,
-        "createdOn": "2012-08-09T14:47:53.679885+00:00",
-        "updatedOn": "2012-09-18T14:05:59.8527283+00:00",
-        "adlibOverrides": {
-            "titel": null,
-            "maker": null,
-            "etiketText": null
-                    }
-                }
-            }
+                "_embedded": {
+                    "events": [
+                        {
+                            "name": "Eagles",
+                            "type": "event",
+                            "id": "vv1AaZAqAGkdPXfSW",
+                            "test": false,
+                            "url": "https://www.ticketmaster.com/eagles-inglewood-california-09-26-2020/event/09005745E5F94CFD",
+                            "locale": "en-us",
+                            "images": [
+                                {
+                                    "ratio": "4_3",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_CUSTOM.jpg",
+                                    "width": 305,
+                                    "height": 225,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_16_9.jpg",
+                                    "width": 1024,
+                                    "height": 576,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_PORTRAIT_3_2.jpg",
+                                    "width": 640,
+                                    "height": 427,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_3_2.jpg",
+                                    "width": 1024,
+                                    "height": 683,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                                    "width": 2048,
+                                    "height": 1152,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_PORTRAIT_16_9.jpg",
+                                    "width": 640,
+                                    "height": 360,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RECOMENDATION_16_9.jpg",
+                                    "width": 100,
+                                    "height": 56,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "3_2",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_ARTIST_PAGE_3_2.jpg",
+                                    "width": 305,
+                                    "height": 203,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_EVENT_DETAIL_PAGE_16_9.jpg",
+                                    "width": 205,
+                                    "height": 115,
+                                    "fallback": false
+                                },
+                                {
+                                    "ratio": "16_9",
+                                    "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_LANDSCAPE_16_9.jpg",
+                                    "width": 1136,
+                                    "height": 639,
+                                    "fallback": false
+                                }
+                            ],
+                            "sales": {
+                                "public": {
+                                    "startDateTime": "2019-10-18T17:00:00Z",
+                                    "startTBD": false,
+                                    "endDateTime": "2020-09-27T03:00:00Z"
+                                },
+                                "presales": [
+                                    {
+                                        "startDateTime": "2019-10-17T17:00:00Z",
+                                        "endDateTime": "2019-10-18T05:00:00Z",
+                                        "name": "Live Nation Mobile App Presale"
+                                    },
+                                    {
+                                        "startDateTime": "2019-10-17T17:00:00Z",
+                                        "endDateTime": "2019-10-18T05:00:00Z",
+                                        "name": "Live Nation / Venue presale"
+                                    },
+                                    {
+                                        "startDateTime": "2019-10-14T17:00:00Z",
+                                        "endDateTime": "2019-10-18T05:00:00Z",
+                                        "name": "American Express® Card Member Presale"
+                                    },
+                                    {
+                                        "startDateTime": "2019-10-18T17:00:00Z",
+                                        "endDateTime": "2020-04-04T05:00:00Z",
+                                        "name": "American Express® Onsale"
+                                    },
+                                    {
+                                        "startDateTime": "2019-10-14T17:00:00Z",
+                                        "endDateTime": "2019-10-18T05:00:00Z",
+                                        "name": "Official Platinum Presale"
+                                    },
+                                    {
+                                        "startDateTime": "2019-10-18T17:00:00Z",
+                                        "endDateTime": "2020-04-19T00:00:00Z",
+                                        "name": "Official Platinum Onsale"
+                                    }
+                                ]
+                            },
+                            "dates": {
+                                "start": {
+                                    "localDate": "2020-09-26",
+                                    "localTime": "20:00:00",
+                                    "dateTime": "2020-09-27T03:00:00Z",
+                                    "dateTBD": false,
+                                    "dateTBA": false,
+                                    "timeTBA": false,
+                                    "noSpecificTime": false
+                                },
+                                "timezone": "America/Los_Angeles",
+                                "status": {
+                                    "code": "rescheduled"
+                                },
+                                "spanMultipleDays": false
+                            },
+                            "classifications": [
+                                {
+                                    "primary": true,
+                                    "segment": {
+                                        "id": "KZFzniwnSyZfZ7v7nJ",
+                                        "name": "Music"
+                                    },
+                                    "genre": {
+                                        "id": "KnvZfZ7vAeA",
+                                        "name": "Rock"
+                                    },
+                                    "subGenre": {
+                                        "id": "KZazBEonSMnZfZ7v6F1",
+                                        "name": "Pop"
+                                    },
+                                    "type": {
+                                        "id": "KZAyXgnZfZ7v7nI",
+                                        "name": "Undefined"
+                                    },
+                                    "subType": {
+                                        "id": "KZFzBErXgnZfZ7v7lJ",
+                                        "name": "Undefined"
+                                    },
+                                    "family": false
+                                }
+                            ],
+                            "promoter": {
+                                "id": "653",
+                                "name": "LIVE NATION MUSIC",
+                                "description": "LIVE NATION MUSIC / NTL / USA"
+                            },
+                            "promoters": [
+                                {
+                                    "id": "653",
+                                    "name": "LIVE NATION MUSIC",
+                                    "description": "LIVE NATION MUSIC / NTL / USA"
+                                }
+                            ],
+                            "info": "To allow for more Card Members to enjoy the show, American Express has set a two-order limit for this offer. This limit applies across all Cards associated with all of your American Express accounts. Prepaid Cards are not eligible.",
+                            "priceRanges": [
+                                {
+                                    "type": "standard",
+                                    "currency": "USD",
+                                    "min": 99.0,
+                                    "max": 750.0
+                                }
+                            ],
+                            "seatmap": {
+                                "staticUrl": "https://maps.ticketmaster.com/maps/geometry/3/event/09005745E5F94CFD/staticImage?type=png&systemId=HOST"
+                            },
+                            "ticketLimit": {
+                                "info": "There is an 8 ticket limit per household."
+                            },
+                            "_links": {
+                                "self": {
+                                    "href": "/discovery/v2/events/vv1AaZAqAGkdPXfSW?locale=en-us"
+                                },
+                                "attractions": [
+                                    {
+                                        "href": "/discovery/v2/attractions/K8vZ9171ob7?locale=en-us"
+                                    }
+                                ],
+                                "venues": [
+                                    {
+                                        "href": "/discovery/v2/venues/KovZpZAEkn6A?locale=en-us"
+                                    }
+                                ]
+                            },
+                            "_embedded": {
+                                "venues": [
+                                    {
+                                        "name": "The Forum",
+                                        "type": "venue",
+                                        "id": "KovZpZAEkn6A",
+                                        "test": false,
+                                        "url": "https://www.ticketmaster.com/the-forum-tickets-inglewood/venue/73750",
+                                        "locale": "en-us",
+                                        "images": [
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dbimages/15787v.jpg",
+                                                "width": 205,
+                                                "height": 115,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "3_1",
+                                                "url": "https://s1.ticketm.net/dam/v/52c/cc82c980-6a5d-4cee-9339-f382c7f5b52c_380251_SOURCE.jpg",
+                                                "width": 1500,
+                                                "height": 500,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "3_1",
+                                                "url": "https://s1.ticketm.net/dam/v/52c/cc82c980-6a5d-4cee-9339-f382c7f5b52c_380251_SOURCE.jpg",
+                                                "width": 1500,
+                                                "height": 500,
+                                                "fallback": false
+                                            }
+                                        ],
+                                        "postalCode": "90305",
+                                        "timezone": "America/Los_Angeles",
+                                        "city": {
+                                            "name": "Inglewood"
+                                        },
+                                        "state": {
+                                            "name": "California",
+                                            "stateCode": "CA"
+                                        },
+                                        "country": {
+                                            "name": "United States Of America",
+                                            "countryCode": "US"
+                                        },
+                                        "address": {
+                                            "line1": "3900 W Manchester Blvd."
+                                        },
+                                        "location": {
+                                            "longitude": "-118.341868",
+                                            "latitude": "33.9583"
+                                        },
+                                        "markets": [
+                                            {
+                                                "name": "Los Angeles",
+                                                "id": "27"
+                                            }
+                                        ],
+                                        "dmas": [
+                                            {
+                                                "id": 223
+                                            },
+                                            {
+                                                "id": 324
+                                            },
+                                            {
+                                                "id": 354
+                                            },
+                                            {
+                                                "id": 383
+                                            }
+                                        ],
+                                        "boxOfficeInfo": {
+                                            "openHoursDetail": "Box office Hours: The Forum Box Office is located on the West side (Prairie Avenue side) of the venue. The Box Office is open Monday through Friday from 11:00 am - 7:00 pm, Saturdays & Sundays (on event days only), opens 12 noon",
+                                            "acceptedPaymentDetail": "Cash, Visa, Mastercard, Discover, American Express. Photo ID is required for all credit card transactions.",
+                                            "willCallDetail": "Location: Box Office Will Call is only open on days of events. Will Call opens two (2) hours prior to the start of the show and closes (1) hour after the start of the show. Will Call tickets can be picked up on the night of the event only. Customers must have the actual credit card used to place the order, photo ID and their confirmation number. Tickets may not be dropped off or left for other guests."
+                                        },
+                                        "parkingDetail": "Parking fees vary per event. Disabled parking is located on all sides of the main Forum lot. Please have your CA State placard available for the attendants.",
+                                        "accessibleSeatingDetail": "Wheelchair and Disabled Seating Policy: Wheelchair and Transfer seating is reserved exclusively for patrons with accessible needs and their companions. Accessible seating is intended for use by an individual with a mobility disability or other disability who requires the accessible features of accessible seating due to a disability, and that individual's companions. The Forum and Madison Square Garden (MSG) reserve the right to investigate potential misuse of accessible seating and to take all appropriate action against individuals who fraudulently obtain tickets for accessible seating. Tickets for accessible seating legitimately purchased for the use by an individual with a disability may be sold or transferred to another individual under the same terms and conditions applicable to other tickets. However, ***In the event such ticket is transferred to a non-disabled individual, The Forum reserves the right to deny entry to the wheelchair seating area or transfer that individual to other available seating*** Purchase Wheelchair and Disabled Seating Tickets for people with accessible needs, subject to availability, may be purchased in several ways: 1) Call Ticketmaster at 800-745-3000 2) Order Online with Ticketmaster (select your event from the list to the left) 3) Visit The Forum Box Office (see box office hours above) 2) Call Forum Disabled Services Department at 888-609-7599 For additional information regarding accessibility at The Forum or to request an interpreted performance or any other accommodations, please call the Forum Disabled Services Department any weekday between 6:30am and 1:30pm PT. Accessible Restrooms Disabled and family restrooms are located on the concourse across from sections 209-210 and 227-228. On the floor, disabled restrooms are located in the hallways adjacent to the North Hospitality, Forum Club, and Chase Lounge. While disabled guests are provided preference at disabled restrooms, any guest may use these restrooms if they require that type of accommodation. Wheelchair Escorts For individuals who have limited mobility, the Forum can provide a wheelchair transport from a guest services location to their seating areas. Upon arrival at the Forum, please ask Guest Services for assistance. Please be aware Forum escort staff is unable to remain with guests for the performance, provide restroom or concessions assistance, nor are they permitted to escort guests into the parking lots, city streets, or surrounding area. If you require a wheelchair for the duration of the show, it is suggested you bring your own wheelchair to the venue. Wheelchair Storage Guests who wish to transfer to a fixed seat from their wheelchair or mobility device, can check their device at any Guest Services location. Claim checks will be issued and guests may pick up their wheelchair until 30 minutes after conclusion of the show.",
+                                        "generalInfo": {
+                                            "generalRule": "ARRIVE EARLY: Please arrive at least one-hour prior to show time. All bags, including purses, will be inspected prior to entry while all patrons will go through a screening process including the use of metal detectors and pat downs as needed. Please be mindful of traffic conditions and local street closures/construction. For a list of prohibited items, please visit www.thefabulousforum.com. No smoking of any substance and no electronic cigarettes are permitted in the Forum No recording devices are permitted No reentry No outside food or beverage is permitted There are no bag or coat check facilities Alcohol Management For most events at the Forum, alcoholic beverages are available for purchase. Staff is trained in the National Restaurant Association Training program. Alcohol sales will be limited to two alcoholic drinks per customer per transaction. Guests are not permitted to bring alcoholic beverages from outside the Forum and may not leave with alcohol purchased at the Forum. Management reserves the right to refuse the sale of alcohol to any guest. All guests may be required to show ID to purchase alcohol. Please be aware it is the policy of the Forum to require all guests who appear to be under forty (40) years of age or younger to present a valid form of ID with proof of age in order to purchase alcoholic beverages at the Forum. Pursuant to applicable state law, The Forum accepts only ID cards issued by a governmental agency that include a current description and picture of the person presenting it, which reasonably describes the person as to date of birth, weight, height, sex, and colors of eyes/hair. The Forum will not accept an ID that has been altered or is expired. We will also not accept a registration certificate issued under the Federal Selective Service Act.",
+                                            "childRule": "Events are all ages (unless noted). Everyone must have a ticket to enter the venue, regardless of age. For age restricted events a valid government issues ID will be required for entry."
+                                        },
+                                        "upcomingEvents": {
+                                            "_total": 33,
+                                            "ticketmaster": 33
+                                        },
+                                        "_links": {
+                                            "self": {
+                                                "href": "/discovery/v2/venues/KovZpZAEkn6A?locale=en-us"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "attractions": [
+                                    {
+                                        "name": "Eagles",
+                                        "type": "attraction",
+                                        "id": "K8vZ9171ob7",
+                                        "test": false,
+                                        "url": "https://www.ticketmaster.com/eagles-tickets/artist/734977",
+                                        "locale": "en-us",
+                                        "externalLinks": {
+                                            "twitter": [
+                                                {
+                                                    "url": "https://twitter.com/TheEaglesBand"
+                                                }
+                                            ],
+                                            "itunes": [
+                                                {
+                                                    "url": "https://itunes.apple.com/artist/id1053549"
+                                                }
+                                            ],
+                                            "lastfm": [
+                                                {
+                                                    "url": "https://www.last.fm/music/Eagles"
+                                                }
+                                            ],
+                                            "wiki": [
+                                                {
+                                                    "url": "https://en.wikipedia.org/wiki/Eagles_(band)"
+                                                }
+                                            ],
+                                            "facebook": [
+                                                {
+                                                    "url": "https://www.facebook.com/EaglesBand"
+                                                }
+                                            ],
+                                            "musicbrainz": [
+                                                {
+                                                    "id": "f46bd570-5768-462e-b84c-c7c993bbf47e"
+                                                }
+                                            ],
+                                            "homepage": [
+                                                {
+                                                    "url": "https://eagles.com/"
+                                                }
+                                            ]
+                                        },
+                                        "images": [
+                                            {
+                                                "ratio": "4_3",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_CUSTOM.jpg",
+                                                "width": 305,
+                                                "height": 225,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_16_9.jpg",
+                                                "width": 1024,
+                                                "height": 576,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "3_2",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_PORTRAIT_3_2.jpg",
+                                                "width": 640,
+                                                "height": 427,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "3_2",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_3_2.jpg",
+                                                "width": 1024,
+                                                "height": 683,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_TABLET_LANDSCAPE_LARGE_16_9.jpg",
+                                                "width": 2048,
+                                                "height": 1152,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_PORTRAIT_16_9.jpg",
+                                                "width": 640,
+                                                "height": 360,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RECOMENDATION_16_9.jpg",
+                                                "width": 100,
+                                                "height": 56,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "3_2",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_ARTIST_PAGE_3_2.jpg",
+                                                "width": 305,
+                                                "height": 203,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_EVENT_DETAIL_PAGE_16_9.jpg",
+                                                "width": 205,
+                                                "height": 115,
+                                                "fallback": false
+                                            },
+                                            {
+                                                "ratio": "16_9",
+                                                "url": "https://s1.ticketm.net/dam/a/c40/e0f4dedd-b435-4b8b-8fd0-e73e47e93c40_851341_RETINA_LANDSCAPE_16_9.jpg",
+                                                "width": 1136,
+                                                "height": 639,
+                                                "fallback": false
+                                            }
+                                        ],
+                                        "classifications": [
+                                            {
+                                                "primary": true,
+                                                "segment": {
+                                                    "id": "KZFzniwnSyZfZ7v7nJ",
+                                                    "name": "Music"
+                                                },
+                                                "genre": {
+                                                    "id": "KnvZfZ7vAeA",
+                                                    "name": "Rock"
+                                                },
+                                                "subGenre": {
+                                                    "id": "KZazBEonSMnZfZ7v6F1",
+                                                    "name": "Pop"
+                                                },
+                                                "type": {
+                                                    "id": "KZAyXgnZfZ7v7nI",
+                                                    "name": "Undefined"
+                                                },
+                                                "subType": {
+                                                    "id": "KZFzBErXgnZfZ7v7lJ",
+                                                    "name": "Undefined"
+                                                },
+                                                "family": false
+                                            }
+                                        ],
+                                        "upcomingEvents": {
+                                            "_total": 15,
+                                            "ticketmaster": 15
+                                        },
+                                        "_links": {
+                                            "self": {
+                                                "href": "/discovery/v2/attractions/K8vZ9171ob7?locale=en-us"
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+]
+}
+}
 """.data(using: .utf8)!
         
-        let titles1 =
-                   "Officers and other civic guardsmen of District II in Amsterdam, under the command of Captain Frans Banninck Cocq and Lieutenant Willem van Ruytenburch, known as ‘The Night Watch’"
-                
+        let priceRangeMin = Double(99)
           
           // act
           do {
-            let favItem = try JSONDecoder().decode(ArtObject.self, from: jsonData)
+            let tMItem = try JSONDecoder().decode(Ticket.self, from: jsonData)
             // assert
-            let supTitle = favItem.titles?.first
-            XCTAssertEqual(titles1, supTitle)
+            let price = tMItem.events[0].priceRanges.first?.min
+            XCTAssertEqual(priceRangeMin, price)
           } catch {
             XCTFail("decoding error: \(error)")
           }

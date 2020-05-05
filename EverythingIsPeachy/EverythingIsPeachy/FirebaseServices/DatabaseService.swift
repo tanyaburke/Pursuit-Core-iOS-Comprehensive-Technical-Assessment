@@ -1,42 +1,43 @@
+////
+////  DatabaseService.swift
+////  EverythingIsPeachy
+////
+////  Created by Tanya Burke on 3/18/20.
+////  Copyright © 2020 Tanya Burke. All rights reserved.
+////
 //
-//  DatabaseService.swift
-//  EverythingIsPeachy
+//import Foundation
+//import FirebaseAuth
+//import FirebaseFirestore
+//import FirebaseFirestoreSwift
 //
-//  Created by Tanya Burke on 3/18/20.
-//  Copyright © 2020 Tanya Burke. All rights reserved.
+//class DatabaseService {
 //
-
-import Foundation
-import FirebaseAuth
-import FirebaseFirestore
-
-class DatabaseService {
-
-static let usersCollection = "users"
-    
-static let museumExperience = "museum" // collections
-static let ticketMasterExperience = "ticketMaster" // collections
-
-static let museumCollection = "museumFavs" // sub-collection on an museumExperience document
-static let ticketCollection = "ticketFavs" // sub-collection on a ticketMasterExperience document
-
-
-//let's get a reference to the Firebase Firestore database
-
-private let db = Firestore.firestore()
-//refers to firestore database
-    
-
-//        public func createItem(itemName: String, price: Double, category: Category, displayName: String, completion: @escaping (Result<String, Error>) -> ()) {
+//static let usersCollection = "users"
+//    
+//static let museumExperience = "museum" // collections
+//static let ticketMasterExperience = "ticketMaster" // collections
+//
+//static let museumCollection = "museumFavs" // sub-collection on an museumExperience document
+//static let ticketCollection = "ticketFavs" // sub-collection on a ticketMasterExperience document
+//
+//
+////let's get a reference to the Firebase Firestore database
+//
+//private let db = Firestore.firestore()
+////refers to firestore database
+//    
+//
+//        public func createMuseumItem(itemName: String, price: Double, category: Category, displayName: String, completion: @escaping (Result<String, Error>) -> ()) {
 //            //"sellerID" - user.uuID
 //            guard let user = Auth.auth().currentUser else { return }
 //
 //            //generate a document from the "items" collection
-//            let documentRef = db.collection(DatabaseService.itemsCollection).document()
+//            let documentRef = db.collection(DatabaseService.museumExperience ).document()
 //
 //            //create a document in our "items" collection
 //            //property names from model is going to be our key names
-//            db.collection(DatabaseService.itemsCollection).document(documentRef.documentID).setData([
+//            db.collection(DatabaseService.museumExperience ).document(documentRef.documentID).setData([
 //                "itemName": itemName,
 //                "price": price,
 //                "itemID": documentRef.documentID,
@@ -52,6 +53,32 @@ private let db = Firestore.firestore()
 //                }
 //            }
 //        }
+//
+//    public func createTicketItem(itemName: String, price: Double, category: Category, displayName: String, completion: @escaping (Result<String, Error>) -> ()) {
+//               //"sellerID" - user.uuID
+//               guard let user = Auth.auth().currentUser else { return }
+//
+//               //generate a document from the "items" collection
+//               let documentRef = db.collection(DatabaseService.museumExperience ).document()
+//
+//               //create a document in our "items" collection
+//               //property names from model is going to be our key names
+//               db.collection(DatabaseService.museumExperience ).document(documentRef.documentID).setData([
+//                   "itemName": itemName,
+//                   "price": price,
+//                   "itemID": documentRef.documentID,
+//                   "listedDate": Timestamp(date: Date()),
+//                   "sellerName": displayName,
+//                   "sellerID": user.uid,
+//                   "categoryName": category.name,
+//               ]) { (error) in
+//                   if let error = error {
+//                       completion(.failure(error))
+//                   } else {
+//                       completion(.success(documentRef.documentID))
+//                   }
+//               }
+//           }
 //
 //        public func createDatabaseUser(authDataResult: AuthDataResult, completion: @escaping (Result<Bool, Error>) -> ()) {
 //
@@ -218,7 +245,7 @@ private let db = Firestore.firestore()
 //    }
 //
 //
-    
-    
-    
-}
+//    
+//    
+//    
+//}

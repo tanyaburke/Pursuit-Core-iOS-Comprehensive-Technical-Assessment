@@ -11,11 +11,6 @@ import FirebaseStorage
 
 class StorageService {
     
-    //in our app we will be uploading a photo to Storage in two places: 1. ProfileViewController and 2. CreateItemViewController
-    
-    //we will be creating two different buckets of folders 1. UserProfilePhotos/user.uid 2. ItemsPhotos/item.itemID
-    
-    //let's create a reference to the Firebase storage
     private let storageRef = Storage.storage().reference()
     
     //default parameters in Swift e.g userID: String? = nil

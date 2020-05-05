@@ -15,6 +15,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var favButton: UIButton!
+    
+    @IBOutlet weak var textDetail: UITextView!
+    
+    @IBOutlet weak var detailImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +37,7 @@ class DetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func favButtonPressed(_ sender: UIButton!) {
+    }
+    
 }

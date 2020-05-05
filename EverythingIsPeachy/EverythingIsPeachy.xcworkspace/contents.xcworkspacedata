@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:InitialView.swift">
-   </FileRef>
-   <FileRef
-      location = "group:UIViewController+Navigation.swift">
-   </FileRef>
-   <FileRef
       location = "group:EverythingIsPeachy.xcodeproj">
    </FileRef>
    <FileRef
